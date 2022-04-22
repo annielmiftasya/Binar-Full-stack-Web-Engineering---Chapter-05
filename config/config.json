@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "annielmiftasya5",
+    "database": "chapter5",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "annielmiftasya5",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "annielmiftasya5",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

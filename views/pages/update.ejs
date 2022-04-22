@@ -1,0 +1,91 @@
+<%- include('../templates/head')-%>
+<%- include('../templates/sidebar')-%>           
+<%- include('../templates/navbar')-%> 
+
+
+          <!-- Page content-->
+          <div class="container-fluid">
+            <div class="d-flex navigasi ms-3 mt-4">
+                <a class="fw-bold" href="#">Cars</a>
+                <h3 class="fw-bold ms-3">></h3>
+                <a class="ms-2 fw-bold" href="#" >List Car</a>
+                <h3 class="fw-bold ms-3">></h3>
+                <a class="ms-2" href="#" >Update Car Information</a>
+            </div>
+            <h3 class=" ms-3 mt-4">Update Car Information</h3>
+
+            <div class="container bg-white mt-4 ms-3 me-sm-5 p-3 pb-5 form-tambah">
+                  <form class="mt-2" action="/car/update/<%= data.id%>" method="post">
+                     <div class="form-group row mt-2">
+                       <label for="staticEmail" class="col-sm-2 col-form-label">
+                           <div class="d-flex">
+                            <p>Name</p>
+                            <p style="color:red">*</p>
+                           </div>
+                       </label>
+                       <div class="col-sm-5">
+                        <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<%= data.name%>" placeholder="Avanza">
+                        </div>
+                     </div>
+                     <div class="form-group row mt-2">
+                       <label for="inputPassword" class="col-sm-2 col-form-label">
+                        <div class="d-flex">
+                            <p>Sewa Per Hari</p>
+                            <p style="color:red">*</p>
+                           </div>
+                       </label>
+                       <div class="col-sm-5">
+                         <input type="number" name="sewa" class="form-control" id="inputPassword" value="<%= data.sewa%>" placeholder="Rp 0,-">
+                       </div>
+                     </div>
+                     <div class="form-group row mt-2">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">
+                            <div class="d-flex">
+                                <p>Ukuran</p>
+                                <p style="color:red">*</p>
+                               </div>
+                        </label>
+                        <div class="col-sm-5">
+                           <select class="form-select"  name="ukuran" aria-label="Default select example" >
+                              <option selected><%= data.ukuran%></option>
+                              <option value="Small">Small</option>
+                              <option value="Medium">Medium</option>
+                              <option value="Large">Large</option>
+                            </select>
+                        </div>
+                      </div>
+
+                      <div class="form-group row mt-2">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">
+                            <div class="d-flex">
+                                <p>Foto</p>
+                                <p style="color:red">*</p>
+                               </div>
+                        </label>
+                      
+
+                          <div class="col-sm-5">
+                            <input class="form-control" name="foto" type="text" value="<%= data.foto%>" aria-label="default input example">  </div>
+                            <p class="input-foto">File size max. 2MB</p>
+                         </div>
+                   
+               </div>
+             
+            </div>
+
+            <div class="d-flex mt-5 mb-1 ms-4 tombol">
+               <button type="button" class="btn btn-blue">
+                 <a>Cancel</a>
+               </button>
+               <button type="submit" class="btn btn-blue1 ms-2">
+                 <a style="color: white;">Save</a>
+               </button>
+           </div>
+          </form>
+        </div>
+        </div>
+              
+      </div>
+      <%- include('../templates/script')-%>   
+      </body>
+</html>

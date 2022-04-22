@@ -1,0 +1,81 @@
+<%- include('../templates/head')-%>
+<%- include('../templates/sidebar')-%>
+<%- include('../templates/navbar')-%>          
+
+<!-- Page content-->
+
+<div class="title container-fluid">
+
+    <div class="d-flex navigasi ms-3 mt-4 ">
+                <a class="fw-bold" href="#">Cars</a>
+                <h3 class="fw-bold ms-3">></h3>
+                <a class="ms-2" href="#">List Car</a>
+                          <!-- <div class="card alert-success shadow-sm rounded" role="alert">
+                  <p>Data Berhasil</p>
+                </div> -->
+
+      </div>
+        <div class="d-flex justify-content-between">
+          <h3 class="ms-3 mt-2">List Car</h3>
+          <button onclick="location.href='/car/tambah'" type="button" class="btn-navy btn me-2 mt-2"> 
+                    <img src="/images/fi_plus.png" alt="" class="me-2 mb-1">
+                    <a>Add New Car</a>
+                </button>
+            </div>
+           
+            <div class="tombol d-flex ms-3 mt-4">
+                <button type="button" onclick="location.href='/car'" class="btn-darkblue btn">All</button>
+                <button type="button" onclick="location.href='/car/size?ukuran=Small'" class="btn-darkblue btn ms-2">Small</button>
+                <button type="button" onclick="location.href='/car/size?ukuran=Medium'" class="btn-darkblue btn ms-2">Medium</button>
+                <button type="button" onclick="location.href='/car/size?ukuran=Large'" class="btn-darkblue btn ms-2">Large</button>
+            </div>
+          
+            </div>
+            <div class="container pb-5">
+                <div class="row row-cols-3" style="margin-top: 2rem;" id="body">
+                  <% for(var i=0; i < data.length; i++) { %>
+                    <div class="col">
+                      <div class="card mt-2 car-card">
+                      <img src="<%= data[i].foto %>" id="imgCar" alt="..." >
+                      <div class="card-body bg-white" style="line-height:20px;">
+                        <p class="card-text mt-4" style="font-size: 14px;"><%= data[i].name %> / <%= data[i].ukuran %></p>
+                        <p class="card-text fw-bold" style="font-size: 24px; line-height:18px;">Rp <%= data[i].sewa %> / hari</p>
+                        <div class="d-flex mt-4">
+                          <img src="/images/fi_clock.png">
+                          <p class="card-text ms-3" style="font-size:14px; color: grey;">Updated at <%= data[i].updatedAt.toLocaleString() %></p>
+                        </div>
+                        <div class="d-flex mt-4 mb-1">
+                          <form action="/car/<%= data[i].id %>" method="post">
+                            <button type="submit" class="btn btn-outline-danger" style="width: 8rem;">
+                              <img src="/images/fi_trash-2.png" alt="" class="me-2 mb-1">
+                              <a style="color: #FA2C5A; font-size: 13px; font-weight: bold;">Delete</a>
+                            </button>
+                          </form>
+                           
+                            <button type="button"  onclick="location.href='/car/edit/<%= data[i].id%>'" class="btn btn-edit ms-2">
+                              <img src="/images/fi_edit.png" alt="" class="me-2 mb-1">
+                              <a style="color: white;">Edit</a>
+                            </button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                 <% } %>
+                   
+                 
+                  
+               
+                   
+                </div>
+            </div>
+          
+        </div>
+        </div>
+              
+            </div>
+        <%- include('../templates/script')-%>   
+        
+      </body>
+
+</html>

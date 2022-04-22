@@ -1,0 +1,221 @@
+#sidebar-wrapper{
+  background-color: #0D28A6;
+  ;
+}
+.content{
+  position:absolute;
+}
+.home{
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 12px;
+  justify-content: center;
+  
+}
+
+.home a {
+  color: white;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+.home:hover{
+  background-color:#CFD4ED;
+  
+}
+
+.navigasi a{
+  text-decoration: none;
+  color: black;
+  margin-top: 1vh;
+}
+
+.btn-darkblue{
+  border: 2px solid #AEB7E1;
+  color: #AEB7E1;
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+.btn-darkblue:hover{
+  background-color: #CFD4ED;
+  color: #0D28A6;
+}
+
+.btn-blue{
+  border: 2px solid #0D28A6;
+  color: #0D28A6;
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+.btn-blue:hover{
+  background-color: #AEB7E1;
+  color: #0D28A6;
+}
+
+.btn-blue1{
+  background-color:  #0D28A6;
+  color: #0D28A6;
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+.btn-blue1:hover{
+  background-color: #AEB7E1;
+  color: #0D28A6;
+}
+.tombol button{
+  width: fit-content;
+}
+
+
+.btn-navy{
+  background-color: #0D28A6;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  height: 2rem;
+  font-size: 13px;
+  margin-top: 4vh;
+  
+}
+.btn-navy:hover{
+  background-color: #CFD4ED;
+  color: #0D28A6;
+}
+/* body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+  margin-right: 2px;
+} */
+
+#imgCar{
+  width: 325px;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  margin-left: 14px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.car-card{
+  width: 22rem; 
+  height: 20rem;
+  margin-bottom:20px;
+}
+
+.btn{
+   width: 10rem;
+   border-radius: 3px;
+}
+
+.btn-edit{
+   background-color: #5CB85F;
+}
+.btn-edit a {
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+.sidebar-cars{
+  overflow-x: hidden;
+  transition: 0.5s;
+  visibility: hidden;
+}
+.sidebar-cars a{
+  text-decoration: none;
+  margin-top: 1rem;
+  margin-left: 2vh;
+  transition: 0.3s;
+}
+
+.sidebar-head{
+  color: grey; 
+  font-weight: bold;
+}
+.btn-sidebar-car{
+ 
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.btn-sidebar-car a{
+  color: black;
+}
+.btn-sidebar-car:hover{
+  background-color: #CFD4ED;
+  color: #0D28A6;
+  margin-left: 0px;
+  height: 2rem;
+}
+.form-select{
+  color: gray;
+}
+
+.input-foto{
+  font-size: 12px;
+  color: gray;
+  margin-left: 10rem;
+  margin-top: -10px;
+}
+.alert-success{
+  margin-left: 4rem;
+  width: 550px;
+  text-align: center;
+  color: white;
+  background-color: #73CA5C;
+}
+
+.alert-success p{
+  font-size: 16px;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+/* 
+.title{
+  position:absolute;
+} */
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: -8.2rem;
+  }
+
+  .car-card{
+  width: 19rem; 
+  height: 26.5rem;
+  margin-bottom:20px;
+  border-radius: 10px;
+  }
+
+  .card-body{
+     border-radius: 20px;
+  }
+  #imgCar{
+     width: 274px;
+     height: 180px;
+     -o-object-fit: cover;
+     object-fit: cover;
+     -o-object-position: center;
+     object-position: center;
+     margin-left: 14px;
+     margin-top: 20px;
+     border-radius: 5px;
+   }
+
+   .form-tambah{
+      width: 96%;
+   }
+}
