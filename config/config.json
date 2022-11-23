@@ -17,7 +17,7 @@
      "username": "zmjatngqwzrvck",
     "password": "28f5d1452e39055da0dc2d2cb54fa848b28e8deb4103f8dfcec9dda9df682ee0",
     "database": "datb3itgee3d1",
-    "host": "ec2-34-207-12-160.compute-1.amazonaws.com:5432",
+    "host": "5432",
     "dialect": "postgres"
   }
 }
