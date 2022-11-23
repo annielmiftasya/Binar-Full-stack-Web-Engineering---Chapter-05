@@ -1,23 +1,5 @@
-{
-  "development": {
-    "username": "postgres",
-    "password": "annielmiftasya5",
-    "database": "chapter5",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
-  },
-  "test": {
-    "username": "postgres",
-    "password": "annielmiftasya5",
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
-  },
-  "production": {
-     "username": "zmjatngqwzrvck",
-    "password": "28f5d1452e39055da0dc2d2cb54fa848b28e8deb4103f8dfcec9dda9df682ee0",
-    "database": "datb3itgee3d1",
-    "host": "ec2-34-207-12-160.compute-1.amazonaws.com",
-    "dialect": "postgres"
-  }
-}
+"username": "zmjatngqwzrvck",
+"password": "28f5d1452e39055da0dc2d2cb54fa848b28e8deb4103f8dfcec9dda9df682ee0",
+"database": "datb3itgee3d1",
+"host": "ec2-34-207-12-160.compute-1.amazonaws.com",
+"dialect": "postgres"
